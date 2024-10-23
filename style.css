@@ -1,0 +1,77 @@
+button { 
+  margin: 10px; 
+  border: none; 
+  background-color: #ffc067; 
+  padding: 10px; 
+  font-family: 'Comic Sans MS', sans-serif; 
+  font-weight: bold; 
+  border-radius: 8px; 
+  transition-duration: 0.4s; 
+  box-shadow: 0 5px #403f3f; 
+} 
+ 
+.cat-button:hover { 
+  background-color: #D46666; 
+  color: white; 
+} 
+ 
+.cat-button:active { 
+  background-color: #D46666; 
+  box-shadow: 0 1px #292828; 
+  transform: translateY(4px); 
+} 
+
+ 
+.cat-button { 
+  position: relative; 
+  background-color: #F08080; 
+  border: none; 
+  color: black; 
+  padding: 15px 20px; 
+  font-size: 16px; 
+  border-radius: 12px; 
+  cursor: pointer; 
+  outline: none; 
+} 
+ 
+.cat-button::before, 
+.cat-button::after { 
+  content: ''; 
+  position: absolute; 
+  width: 30px; 
+  height: 20px; 
+  background-color: #F08080; 
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+  top: -15px; 
+  z-index: 1; 
+  transition-duration: 0.4s; 
+} 
+ 
+.cat-button::before { 
+  left: 10px; 
+} 
+ 
+.cat-button::after { 
+  right: 10px; 
+} 
+ 
+ 
+.cat-button:hover { 
+  background-color: #D46666; /* Color when hovered */ 
+} 
+ 
+.cat-button:hover::before, 
+.cat-button:hover::after { 
+  background-color: #D46666; /* Match ear color when hovered */ 
+} 
+ 
+.cat-button:active { 
+  background-color: #D46666; /* Color when clicked */ 
+  box-shadow: 0 1px #292828; 
+  transform: translateY(4px); 
+} 
+ 
+.cat-button:active::before, 
+.cat-button:active::after 
+  background-color: #B44D4D; /* Match ear color when clicked */ 
+}
